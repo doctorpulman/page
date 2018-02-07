@@ -1,0 +1,126 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+	font-size: 16px
+	color: #fff;
+}
+
+#header-nav {
+	background-color: teal;
+	color: black;
+	font-style: bold;
+	border-radius: 0px;
+	border-color: black;
+}
+
+.informacje {
+	font-size: 22px;
+	font-weight: bold;
+	min-height: 100px;
+	margin: 15px;
+	border-width: 5px;
+	padding: 15px;
+	color: black;
+}
+
+.informacje p {
+	color: black;
+}
+
+.navbar-header h1 {
+	color: black;
+	font-size: 2.4em;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+	text-align: center;
+	height: 100px;
+	line-height: 100px;
+	margin-left: 40px;
+}
+
+.navbar-right h2 {
+	color: black;
+	font-size: 3em;
+	height: 100px;
+	line-height: 100px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 80px;
+  line-height: 80px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+.footer > a {
+	font-size: 3em;
+	margin-top: 10px;
+}
+
+[class*="row"] {
+	margin-bottom: 1em;
+  	justify-content: center;
+}
+
+.card {
+	min-height: 300px;
+	max-width: 100%;
+	min-width: 300px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    img {
+		width: 100%;
+	}
+}
+
+.card-block img{
+	max-width: 100% !important;
+	height: auto;
+	width: auto;
+}
+
+.card-block p {
+	font-size: 2em;
+
+}
+
+// Mixin itself
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// Usage as a mixin
+.element {
+  @include clearfix;
+}
+
+.btn { /* just for this demo. */
+    margin-top: 5px;
+    font-size: 2em;
+}
+.btn-arrow-right,
+.btn-arrow-left {
+    position: relative;
+    padding-left: 18px;
+    padding-right: 18px;
+}
+.btn-arrow-right {
+    padding-left: 36px;
+}
+.btn-arrow-left {
+    padding-right: 36px;
+}
+
+.container p {
+	font-size: 1.6em;
+}
