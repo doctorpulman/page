@@ -3,40 +3,78 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+	<title>Do zapamiętania</title>
+ 	
+ 	<!--BOOTSTRAP
+ 	<link href="css/bootstrap.min.css" rel="stylesheet">-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/3.0.1/css/primer.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css">
+	<link href="css/styles.css" rel="stylesheet">
 
-	 <!-- Bootstrap -->
-	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-     <link href="css/bootstrap.min.css" rel="stylesheet">
-
-	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<header>
-		<nav id="header-nav" class="navbar navbar-default">
-			<div class="container-fluid">
-				<div class="navbar-text informacje">
-					<p>klasa </p>
-					<p>zajęcia </p>
-				</div>
-				
-				<div class="navbar-header">
-					<h1></h1>
-				</div>
+	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+	        <ul class="navbar-nav mr-auto">
+	            <li class="nav-item">
+	            	<a class="nav-link" href="page-5.html" style="color: teal">
+	            		<span class="octicon octicon-chevron-left"></span>
+	            		wróć
+	            	</a>
+	            </li>
+	            <li class="nav-item">
+	                <span class="navbar-text">
+	                	<span class="octicon octicon-briefcase"></span>
+	                	kl.4
+	            	</span>
+	            </li>
+	            <li class="nav-item">
+	                <span class="navbar-text">
+	                	<span class="octicon octicon-book"></span>
+	            		4K18 
+	            	</span>
+	            </li>
+	        </ul>
+	    </div>
+	    <div class="mx-auto order-0">
+	        <a class="navbar-brand" href="#" style="color: aqua">Do zapamiętania</a>
+	        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+	            <span class="navbar-toggler-icon"></span>
+	        </button>
 
-				<div class="navbar-right">
-					<h2><span class="label label-primary">5 min</span></h2>
-				</div>
-			</div>
-		</nav>
-	</header>
+	    </div>
+	    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+	        <ul class="navbar-nav ml-auto">
+	        	<li class="nav-item time">
+	        		<span  class="navbar-text" style="color: lime;">5 min</span>
+	        	</li>
+	            <li class="nav-item dropdown">
+	        		<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	          		<span class="octicon octicon-list-unordered"></span>
+	          		idź do
+	        		</a>
+			        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+			          <a class="dropdown-item" href="index.html">Temat</a>
+                       			          <a class="dropdown-item" href="page-1.html">Zapoznanie uczniów z tematem lekcji</a>
+ 			          <a class="dropdown-item" href="page-2.html">Omówienie czujnika kolorów</a>
+ 			          <a class="dropdown-item" href="page-3.html">Ćwiczenie z czujnikiem kolorów</a>
+ 			          <a class="dropdown-item" href="page-4.html">Ćwiczenie z czujnikiem dotyku</a>
+ 			          <a class="dropdown-item" href="page-5.html">Podsumowanie</a>
+			        </div>
+			    </li>
+	            <li class="nav-item">
+	            	<a hidden class="nav-link" href="" style="color: teal">
+	            		dalej
+	            		<span class="octicon octicon-chevron-right"></span>
+	            	</a>
+	            </li>
+	        </ul>
+	    </div>
+	</nav>
 <div class="container-fluid">
-	<div class="clearfix">
-		<a href="page-5.html">
-			<button type="button" class="btn btn-success btn-arrow-left float-left">&#8249; wstecz</button>	
-		</a>
-	</div>
 	<div class="row">
 		<div class="card-deck">
 <div class="card card-block m-4">
@@ -49,16 +87,21 @@
 </div>
 		</div>
 	</div>
-	<footer class="footer">
-		<div class="container">
-			<span class="lead">LOGOTYPY LOGOTYPY LOGOTYPY LOGOTYPY LOGOTYPY LOGOTYPY LOGOTYPY LOGOTYPY</span>
-		</div>
-	</footer>
+</div>
+<nav class="navbar fixed-bottom navbar-expand-sm">
+	<div id="thumbs">
+		<img src="data/logo_FE_Program_Regionalny_rgb-2.jpg" class="img-fluid" alt="Responsive image" height="80" width="152">
+		<img src="data/podkarpackie_przestrzen_otwarta.jpg" class="img-fluid" alt="Responsive image" height="80" width="198">
+		<img src="data/wup-rzeszow-logo.jpg" class="img-fluid" alt="Responsive image" height="80" width="340">
+		<img class="img-fluid" src="data/EU_EFS_rgb-3.jpg" alt="Unia Europejska logo" height="80" width="271">
+	</div>
+</nav>
+
 
 	<!-- jQuery first, then Tether, then Bootstrap JS. -->
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/my.js"></script>
 </body>
 </html>
